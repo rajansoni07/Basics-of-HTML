@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>
+        Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!
+    </title>
+    <link rel="shortcut icon" href="images/ficon.jfif" type="image/x-icon">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="position-sticky bg-primary container-fluid flipheader">
+        <div class="row py-2">
+            <div class="col-1"></div>
+            <!-- logo -->
+            <div class="col-1">
+                <img src="images/Flipkart.png" alt="Flipcart" height="44px" class="">
+            </div>
+            <!-- searchbar -->
+            <div class="col-5">
+                <div class="row bg-light">
+                    <div class="input-group col-md-4">
+                        <input class="form-control border-0 border" type="search" id="psearch" placeholder="Search for products, brands and more">
+                        <span class="input-group-append">
+                            <button class="btn btn-outline-secondary border-0"  type="button" id="psearchbtn">
+                                <i class="fa fa-search text-primary"></i>
+                            </button>
+                          </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+            <!-- login btn -->
+            <div class="col-1">
+                <a class="btn btn-light text-primary rounded-0" href="#" id="loginbtn">
+                    <span style="font-weight:500">Login</span>
+                </a>
+            </div>
+            <!-- more -->
+            <div class="col-1">
+                <div class="btn text-light rounded-0" href="#" id="#morebtn">
+                    <span style="font-weight:700">More </span>
+                    <span><i class="fa fa-angle-down"></i></span>
+                </div>
+            </div>
+            <!-- cart -->
+            <div class="col-1">
+                <a class="btn text-light" href="#" id="mycart">
+                    <span><i class="fa fa-shopping-cart"></i></span>
+                    <span style="font-weight:700"> Cart</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- navbar links -->
+    <div class="container">
+        <div class="navlinkwrapper">
+            <!-- top offers -->
+            <div class="navlink text-center">
+                <a href="#">
+                    <img src="images/topoffers.png" alt="top offers" class="linkimg">
+                    <div>Top Offers</div>
+                </a>
+            </div>
+            <!-- Grocery -->
+            <div class="navlink text-center">
+                <a href="#">
+                    <img src="images/grocery.png" alt="Grocery" class="linkimg">
+                    <div>Grocery</div>
+                </a>
+            </div>
+            <!-- Mobiles -->
+            <div class="navlink text-center">
+                <a href="#">
+                    <img src="images/mobiles.png" alt="mobiles" class="linkimg">
+                    <div>Mobiles</div>
+                </a>
+            </div>
+            <!-- fasion -->
+            <div class="navlink text-center">
+                <a href="#">
+                    <img src="images/fasion.png" alt="fasion" class="linkimg">
+                    <div>Fashion <span><i class="fa fa-angle-down"></i></span></div>
+                </a>
+            </div>
+            <!-- electronics -->
+            <div class="navlink text-center">
+                <a href="#">
+                    <img src="images/electronics.png" alt="electronics" class="linkimg">
+                    <div>Electronics <span><i class="fa fa-angle-down"></i></span></div>
+                </a>
+            </div>
+            <!-- home -->
+            <div class="navlink text-center">
+                <a href="#">
+                    <img src="images/home.jpg" alt="home" class="linkimg">
+                    <div>Home <span><i class="fa fa-angle-down"></i></span></div>
+                </a>
+            </div>
+            <!-- appliances -->
+            <div class="navlink text-center">
+                <a href="#">
+                    <img src="images/appliences.png" alt="appliances" class="linkimg">
+                    <div>Appliances <span><i class="fa fa-angle-down"></i></span></div>
+                </a>
+            </div>
+            <!-- travel -->
+            <div class="navlink text-center">
+                <a href="#">
+                    <img src="images/travel.png" alt="travel" class="linkimg">
+                    <div>Travel</div>
+                </a>
+            </div>
+            <!-- toys -->
+            <div class="navlink text-center">
+                <a href="#">
+                    <img src="images/toys.png" alt="toys" class="linkimg">
+                    <div>Beauty, Toys & More <span><i class="fa fa-angle-down"></i></span></div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+       <div class="container p-2">
+            <!-- deals of the day -->
+            <div class="content m-2">
+                <div class="row p-3">
+                    <div class="col-2 h4">
+                        Deals of the day
+                    </div>
+                    <div class="col text-secondary">
+                        <i class="fa fa-stopwatch"></i>
+                        22 : 07 : 36 Left
+                    </div>
+                    <div class="col-2 align-self-end text-end">
+                        <button class="btn btn-sm btn-primary text-light px-4 rounded-0">View All</button>
+                    </div>
+                </div>
+                <hr class="m-0">
+                <div class="p-3">
+                    <div class="productlist">
+                        <!-- item 1 -->
+                        <div class="itemcard text-center">
+                            <a href="#" class="productlink">
+                                <img src="images/products/clock.jpeg" alt="clock" class="productimg">
+                                <div class="productname">Men & Women Watches</div>
+                                <div class="poffer">From &#8377 99</div>
+                                <div class="pdetail">Best Selling Styles!</div>
+                            </a>
+                        </div>
+                        <!-- item 2 -->
+                        <div class="itemcard text-center">
+                            <a href="#" class="productlink">
+                                <img src="images/products/jackets.jpeg" alt="jacket" class="productimg">
+                                <div class="productname">Jackets, Sweatshirts, Sweaters.</div>
+                                <div class="poffer">Under &#8377 899</div>
+                                <div class="pdetail">Winter Essentials!</div>
+                            </a>
+                        </div>
+                        <!-- item 3 -->
+                        <div class="itemcard text-center">
+                            <a href="#" class="productlink">
+                                <img src="images/products/dresses.jpeg" alt="dresses" class="productimg">
+                                <div class="productname">Stylish Collection!</div>
+                                <div class="poffer">From &#8377 399</div>
+                                <div class="pdetail">Kurtas & Kurtis</div>
+                            </a>
+                        </div>
+                        <!-- item 4 -->
+                        <div class="itemcard text-center">
+                            <a href="#" class="productlink">
+                                <img src="images/products/microphone.jpeg" alt="microphone" class="productimg">
+                                <div class="productname">Wired Earphone</div>
+                                <div class="poffer">Upto 60% Off !</div>
+                                <div class="pdetail">Mi, boat, realme & more</div>
+                            </a>
+                        </div>
+                        <!-- item 5 -->
+                        <div class="itemcard text-center">
+                            <a href="#" class="productlink">
+                                <img src="images/products/sofa.jpeg" alt="sofa" class="productimg">
+                                <div class="productname">Sofa Sets</div>
+                                <div class="poffer">Min 50% Off !</div>
+                                <div class="pdetail">Bharat Lifestyle & more</div>
+                            </a>
+                        </div>
+                        <!-- item 5 -->
+                        <div class="itemcard text-center">
+                            <a href="#" class="productlink">
+                                <img src="images/products/fila.jpeg" alt="footware" class="productimg">
+                                <div class="productname">Nike, Aadi, Sketchers &...</div>
+                                <div class="poffer">From &#8377 1199+Extra 10% Off</div>
+                                <div class="pdetail">Bharat Lifestyle & more</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>       
+       </div>
+    </div>
+
+</body>
+</html>
