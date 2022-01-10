@@ -134,17 +134,22 @@
     <div class="main">
        <div class="container p-2">
             <!-- deals of the day -->
-            <div class="content m-2">
+            <div class="content mt-3">
                 <div class="row p-3">
-                    <div class="col-2 h4">
+                    <div class="col-2 h4 pt-2 pl-2 contentheading">
                         Deals of the day
                     </div>
-                    <div class="col text-secondary">
-                        <i class="fa fa-stopwatch"></i>
-                        22 : 07 : 36 Left
+                    <div class="col text-secondary pt-2">
+                        <span><img src="images/timer.svg" alt="timer"></span>
+                        <div class="pt-3 d-inline" id="timer">
+                            <span id="timerday"></span>
+                            <span id="timerhour"></span>
+                            <span id="timermin"></span>
+                            <span id="timersec"></span>
+                        </div>
                     </div>
-                    <div class="col-2 align-self-end text-end">
-                        <button class="btn btn-sm btn-primary text-light px-4 rounded-0">View All</button>
+                    <div class="col-2 align-self-end text-end"> 
+                        <button class="btn btn-sm btn-primary text-light py-2 px-4 rounded-1">View All</button>
                     </div>
                 </div>
                 <hr class="m-0">
@@ -201,14 +206,122 @@
                                 <img src="images/products/fila.jpeg" alt="footware" class="productimg">
                                 <div class="productname">Nike, Aadi, Sketchers &...</div>
                                 <div class="poffer">From &#8377 1199+Extra 10% Off</div>
-                                <div class="pdetail">Bharat Lifestyle & more</div>
+                                <div class="pdetail">Shop Now!</div>
                             </a>
                         </div>
                     </div>
                 </div>
-            </div>       
+            </div>
+            
+            <!-- Other -->
+            <div class="content mt-3">
+                <div class="row p-3">
+                    <div class="col h4 pt-2 pl-2 contentheading">
+                        Other Best Selling Items
+                        <span class="h6 d-block text-secondary pt-1 m-0">
+                            Hurry, Don't Miss Out!
+                        </span>
+                    </div>
+                    <div class="col"></div>
+                    <div class="col-2 align-self-end text-end"> 
+                        <button class="btn btn-sm btn-primary text-light py-2 px-4 rounded-1">View All</button>
+                    </div>
+                </div>
+                <hr class="m-0">
+                <div class="p-3">
+                    <div class="productlist">
+                        <!-- item 1 -->
+                        <div class="itemcard text-center">
+                            <a href="#" class="productlink">
+                                <img src="images/products/bagpack.jpeg" alt="bagpack" class="productimg">
+                                <div class="productname">Collage Bagpacks</div>
+                                <div class="poffer">Under &#8377 999</div>
+                                <div class="pdetail">Skybags, Wildcraft...</div>
+                            </a>
+                        </div>
+                        <!-- item 2 -->
+                        <div class="itemcard text-center">
+                            <a href="#" class="productlink">
+                                <img src="images/products/cateye.jpeg" alt="sunglass" class="productimg">
+                                <div class="productname">Sunglasses</div>
+                                <div class="poffer">Extra 20% Off</div>
+                                <div class="pdetail">Great Savings!</div>
+                            </a>
+                        </div>
+                        <!-- item 3 -->
+                        <div class="itemcard text-center">
+                            <a href="#" class="productlink">
+                                <img src="images/products/fragrance.jpeg" alt="perfume" class="productimg">
+                                <div class="productname">FOGG Scent Xtermo 50ml</div>
+                                <div class="poffer">40% Off</div>
+                                <div class="pdetail">Flipcart Assure!</div>
+                            </a>
+                        </div>
+                        <!-- item 4 -->
+                        <div class="itemcard text-center">
+                            <a href="#" class="productlink">
+                                <img src="images/products/bedsheet.jpeg" alt="bedsheet" class="productimg">
+                                <div class="productname">Double Bed Bedsheets</div>
+                                <div class="poffer">From &#8377 799</div>
+                                <div class="pdetail">Bharat Lifestyle & more</div>
+                            </a>
+                        </div>
+                        <!-- item 5 -->
+                        <div class="itemcard text-center">
+                            <a href="#" class="productlink">
+                                <img src="images/products/chair.jpeg" alt="chair" class="productimg">
+                                <div class="productname">Office & Study Chairs</div>
+                                <div class="poffer">Min 50% Off !</div>
+                                <div class="pdetail">Fabric & Leatherette</div>
+                            </a>
+                        </div>
+                        <!-- item 5 -->
+                        <div class="itemcard text-center">
+                            <a href="#" class="productlink">
+                                <img src="images/products/makeup.jpeg" alt="makeup" class="productimg">
+                                <div class="productname">Beauty Pack</div>
+                                <div class="poffer">Upto 30% Off</div>
+                                <div class="pdetail">LekMe, Garnier...</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
        </div>
     </div>
 
+    <script>
+        // js for timer countdown
+        var countDownDate = new Date("Jan 11, 2022").getTime();
+
+        var x = setInterval(function() {
+
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+        
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var hr = hours.toLocaleString('en-us',{minimumIntegerDigits:2, useGrouping:false});
+
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var min = minutes.toLocaleString('en-us',{minimumIntegerDigits:2, useGrouping:false});
+
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        var sec = seconds.toLocaleString('en-us',{minimumIntegerDigits:2, useGrouping:false});
+            
+        if(days > 0){ //display day only if days are > 24 hour
+            document.getElementById("timerday").innerHTML = days + " :";
+        }
+        document.getElementById("timerhour").innerHTML = hr + " :";
+        document.getElementById("timermin").innerHTML = min + " :";
+        document.getElementById("timersec").innerHTML = sec + " Left";
+
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("timer").innerHTML = "EXPIRED !!";
+        }
+
+        }, 1000); // call setInterval 1000ms means each second
+    </script>
 </body>
 </html>
