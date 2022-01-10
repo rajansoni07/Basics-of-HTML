@@ -25,7 +25,7 @@
 
 .navlinkwrapper{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .navlink{
@@ -45,6 +45,15 @@
 
 .content{
     background-color: white;
+    box-shadow: 2px 2px 5px #aaa;
+}
+
+.contentheading{
+    margin-left:10px ;
+}
+
+#timer{
+    margin-left: 10px;
 }
 
 .productlist{
@@ -54,6 +63,7 @@
 }
 
 .itemcard{
+    min-width: 200px;
     padding: 25px 15px;
 }
 
